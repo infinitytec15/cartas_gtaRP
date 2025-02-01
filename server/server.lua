@@ -25,7 +25,7 @@ else
     print("^1[AVISO] Nenhum framework compatível (vRPex ou Creative) foi detectado.^7")
 end
 
--- Função para adicionar dinheiro ao jogador (exemplo de integração)
+-- Função para adicionar dinheiro ao jogador 
 function AddMoney(playerId, amount)
     if framework == "vrp" then
         local user_id = vRP.getUserId({playerId})
@@ -39,7 +39,7 @@ function AddMoney(playerId, amount)
     end
 end
 
--- Exemplo de uso
+
 RegisterServerEvent('cardGame:rewardWinner')
 AddEventHandler('cardGame:rewardWinner', function(amount)
     local playerId = source
